@@ -21,20 +21,20 @@ __预处理__：
 
 ```Python
 if l1 == None and l2 == None:
-	return None
+    return None
 elif l1 == None:
-	return l2
+    return l2
 elif l2 == None:
-	return l1
+    return l1
 
 if l2.val <= l1.val: root = l2
 else: root = l1
 
 p1, p2 = l1, l2
 while p2 != None:
-	.
-	.
-	.
+    .
+    .
+    .
 return root
 ```
 
@@ -45,11 +45,11 @@ return root
 
 ```python
 if p2.val <= p1.val:
-	while p2.next != None and p2.next.val <= p1.val:
-		p2 = p2.next
-	l2 = p2.next
-	p2.next = p1
-	p2 = l2
+    while p2.next != None and p2.next.val <= p1.val:
+	p2 = p2.next
+    l2 = p2.next
+    p2.next = p1
+    p2 = l2
 ```
 
 ## 3.进行第二轮判断
@@ -59,12 +59,12 @@ if p2.val <= p1.val:
 
 ```python
 else:
-	while p1.next != None and p1.next.val < p2.val:
-		p1 = p1.next
-	l2 = p2.next
-	p2.next = p1.next
-	p1.next = p2
-	p2 = l2
+    while p1.next != None and p1.next.val < p2.val:
+	p1 = p1.next
+    l2 = p2.next
+    p2.next = p1.next
+    p1.next = p2
+    p2 = l2
 ```
 
 ## 4.进行第三轮判断
@@ -74,18 +74,18 @@ else:
 
 ```python
 while p2 != None:
-	if p2.val <= p1.val:
-		while p2.next != None and p2.next.val <= p1.val:
-			p2 = p2.next
-		l2 = p2.next
-		p2.next = p1
-	else:
-		while p1.next != None and p1.next.val < p2.val:
-			p1 = p1.next
-		l2 = p2.next
-		p2.next = p1.next
-		p1.next = p2
-	p2 = l2
+    if p2.val <= p1.val:
+	while p2.next != None and p2.next.val <= p1.val:
+		p2 = p2.next
+	l2 = p2.next
+	p2.next = p1
+    else:
+	while p1.next != None and p1.next.val < p2.val:
+		p1 = p1.next
+	l2 = p2.next
+	p2.next = p1.next
+	p1.next = p2
+    p2 = l2
 
 return root
 ```
