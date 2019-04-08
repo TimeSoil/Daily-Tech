@@ -5,10 +5,11 @@
 [m-second-step]:https://github.com/TimeSoil/Daily-Tech/blob/4141df26ade702bed9399963aeedcde7a234e764/LeetCode/simple/screenshots/mergeTwoLists/mergeTwoLists-mergeTwoLists-second-step.png
 
 [m-third-step]:https://github.com/TimeSoil/Daily-Tech/blob/4141df26ade702bed9399963aeedcde7a234e764/LeetCode/simple/screenshots/mergeTwoLists/mergeTwoLists-mergeTwoLists-third-step.png
+[m-code]:https://github.com/TimeSoil/Daily-Tech/blob/180b1c7f1a66e17c0cfbef9f8e1d77c732859bd8/LeetCode/simple/mergeTwoLists.py
 
-
-# MergeTwoList - Python        
+# MergeTwoLists - Python        
 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的
+([代码][m-code])
 ## 1.初始化，并预处理
 ![][m-initial]
 
@@ -89,7 +90,7 @@ while p2 != None:
 return root
 ```
 ## 5.进行第四轮判断
-__剩下一个就留作练习啦~~~__
+__剩下一个就留作练习啦~~~__([代码][m-code])
 
 
 
